@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+ 
 }
 body{
   width: 100%;
@@ -60,7 +60,21 @@ h1{
   border-radius: 10px;
   width: 8vw;
   height: 2vw;
-
+  background-color: black;
   margin-right: 23vw;
+  color: #fff;
+  cursor: pointer;
+}
+.dark-mode-btn {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+.dark-mode-btn.dark {
+  background-color: #fff;
+  color: #222;
+}

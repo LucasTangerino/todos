@@ -12,25 +12,30 @@
         
         <div class="input">
           <label for="fazer">Fazer:<br>
-          <input type="text" onkeyup="showInput()" id="fazer"></label>
+          <input type="text" id="fazer"></label>
           <br>
           <label for="data">Data:<br>
           <input type="date" id="data" name="data"></label>
           <br>
           <label for="minutos">Minutos:<br>
           <input type="time" id="minutos" name="minutos"></label>
-          <input type="text" placeholder="" id="resultado">
         </div>
-        <button class="botao">pesquisar</button>
+        <p id="demo"></p>
+        <button class="botao" onclick="showInput()">pesquisar</button>
+        <button class="dark-mode-btn" onclick="toggleDarkMode()">Dark Mode</button>
     </div>
+
+
 
     <script>
         function showInput() {
-            var input1 = document.getElementById("fazer").value;
-            document.getElementById("resultado").value = input1;
+            document.getElementById("demo").innerHTML = document.getElementById("fazer").value;
+        }
+
+        function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark');
         }
     </script>
-
-
 </body>
 </html>
