@@ -26,14 +26,12 @@ h1{
 
 }
 .container2{
-  background-color: transparent;
   height: 20vw;
   width: 60vw;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background-color: aliceblue;
   flex-direction: column;
 
 
@@ -74,7 +72,20 @@ h1{
   cursor: pointer;
 }
 
+/* Botão de alternância do dark mode */
 .dark-mode-btn.dark {
-  background-color: #fff;
+  background-color: black;
   color: #222;
+}
+
+/* style.css */
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+/* style.css */
+.container2.dark {
+  background-color: black;
+  /* Adicione outras regras de estilo conforme necessário */
 }
